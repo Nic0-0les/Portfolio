@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptography Projects - Nicole Selo-Ojeme</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cc84b2;
+            ;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #fefefc;
+            color: white;
+            font-family: 'Courier New', monospace;
+        }
+        video {
+            display: block;
+            margin: 20px auto;
+            max-width: 70%;
+            height: auto;
+            border: 10px solid #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        audio {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 600px;
+        }
+        h1, h2, h3 {
+            font-size: 24px;
+            color: #005f73;
+        }
+        p, table {
+            font-size: 18px;
+            color: #333;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        /* Home button styling */
+        .home-button {
+            margin-right: auto;
+            padding: 5px;
+        }
+        .home-button img {
+            width: 150px; /* Adjust size as necessary */
+            height: auto;
+        }
+        /* Table styling */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #005f73;
+            color: white;
+        }
+        td {
+            background-color: #e6f2ff;
+        }
+        /* Cipher explanations */
+        .cipher-explanation {
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .equation {
+            font-style: italic;
+            color: #007acc;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #005f73;
+        }
+        .quote {
+            font-size: 20px;
+            color: #333;
+            font-style: italic;
+            margin: 20px 0;
+        }
+         /* Footer Styling */
+        footer {
+            background-color: #fff;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 47px;
+            
+        }
+        .pixelart-to-css {
+            box-shadow: 80px 50px 0 0 rgba(58,74,166,1), 90px 50px 0 0 rgba(63,81,181,1), 100px 50px 0 0 rgba(63,81,181,1), 110px 50px 0 0 rgba(63,81,181,1), 120px 50px 0 0 rgba(63,81,181,1), 130px 50px 0 0 rgba(58,74,166,1), 70px 60px 0 0 rgba(58,74,166,1), 80px 60px 0 0 rgba(63,81,181,1), 90px 60px 0 0 rgba(63, 81, 181, 1), 100px 60px 0 0 rgba(63, 81, 181, 1), 110px 60px 0 0 rgba(33, 150, 243, 1), 120px 60px 0 0 rgba(33, 150, 243, 1), 130px 60px 0 0 rgba(63,81,181,1), 140px 60px 0 0 rgba(58,74,166,1), 60px 70px 0 0 rgba(58,74,166,1), 70px 70px 0 0 rgba(63,81,181,1), 80px 70px 0 0 rgba(63,81,181,1), 90px 70px 0 0 rgba(63, 81, 181, 1), 100px 70px 0 0 rgba(33, 150, 243, 1), 110px 70px 0 0 rgba(33, 150, 243, 1), 120px 70px 0 0 rgba(100,70,59,1), 130px 70px 0 0 rgba(33, 150, 243, 1), 140px 70px 0 0 rgba(63,81,181,1), 150px 70px 0 0 rgba(58,74,166,1), 60px 80px 0 0 rgba(63,81,181,1), 70px 80px 0 0 rgba(63, 81, 181, 1), 80px 80px 0 0 rgba(63, 81, 181, 1), 90px 80px 0 0 rgba(33, 150, 243, 1), 100px 80px 0 0 rgba(33, 150, 243, 1), 110px 80px 0 0 rgba(100,70,59,1), 120px 80px 0 0 rgba(121,85,72,1), 130px 80px 0 0 rgba(121, 85, 72, 1), 140px 80px 0 0 rgba(33, 150, 243, 1), 150px 80px 0 0 rgba(63,81,181,1), 60px 90px 0 0 rgba(63, 81, 181, 1), 70px 90px 0 0 rgba(63, 81, 181, 1), 80px 90px 0 0 rgba(33, 150, 243, 1), 90px 90px 0 0 rgba(33, 150, 243, 1), 100px 90px 0 0 rgba(100,70,59,1), 110px 90px 0 0 rgba(121,85,72,1), 120px 90px 0 0 rgba(0, 0, 0, 1), 130px 90px 0 0 rgba(255, 255, 255, 1), 140px 90px 0 0 rgba(121, 85, 72, 1), 150px 90px 0 0 rgba(33, 150, 243, 1), 60px 100px 0 0 rgba(63, 81, 181, 1), 70px 100px 0 0 rgba(33, 150, 243, 1), 80px 100px 0 0 rgba(33, 150, 243, 1), 90px 100px 0 0 rgba(100,70,59,1), 100px 100px 0 0 rgba(121,85,72,1), 110px 100px 0 0 rgba(121,85,72,1), 120px 100px 0 0 rgba(121, 85, 72, 1), 130px 100px 0 0 rgba(121, 85, 72, 1), 140px 100px 0 0 rgba(121, 85, 72, 1), 150px 100px 0 0 rgba(121,85,72,1), 160px 100px 0 0 rgba(100,70,59,1), 50px 110px 0 0 rgba(63, 81, 181, 1), 60px 110px 0 0 rgba(33, 150, 243, 1), 70px 110px 0 0 rgba(33, 150, 243, 1), 80px 110px 0 0 rgba(100,70,59,1), 90px 110px 0 0 rgba(121,85,72,1), 100px 110px 0 0 rgba(121,85,72,1), 110px 110px 0 0 rgba(121,85,72,1), 120px 110px 0 0 rgba(0, 0, 0, 1), 130px 110px 0 0 rgba(121,85,72,1), 140px 110px 0 0 rgba(121, 85, 72, 1), 150px 110px 0 0 rgba(100,70,59,1), 160px 110px 0 0 rgba(255, 193, 7, 1), 50px 120px 0 0 rgba(33, 150, 243, 1), 60px 120px 0 0 rgba(33, 150, 243, 1), 70px 120px 0 0 rgba(100,70,59,1), 80px 120px 0 0 rgba(121,85,72,1), 90px 120px 0 0 rgba(0, 0, 0, 1), 100px 120px 0 0 rgba(0, 0, 0, 1), 110px 120px 0 0 rgba(0, 0, 0, 1), 120px 120px 0 0 rgba(121,85,72,1), 130px 120px 0 0 rgba(121,85,72,1), 140px 120px 0 0 rgba(121,85,72,1), 150px 120px 0 0 rgba(255, 193, 7, 1), 160px 120px 0 0 rgba(255, 152, 0, 1), 170px 120px 0 0 rgba(255, 193, 7, 1), 60px 130px 0 0 rgba(33, 150, 243, 1), 70px 130px 0 0 rgba(100,70,59,1), 80px 130px 0 0 rgba(121,85,72,1), 90px 130px 0 0 rgba(121, 85, 72, 1), 100px 130px 0 0 rgba(121,85,72,1), 110px 130px 0 0 rgba(121,85,72,1), 120px 130px 0 0 rgba(121, 85, 72, 1), 130px 130px 0 0 rgba(121,85,72,1), 140px 130px 0 0 rgba(121,85,72,1), 150px 130px 0 0 rgba(33, 150, 243, 1), 160px 130px 0 0 rgba(255, 193, 7, 1), 60px 140px 0 0 rgba(33, 150, 243, 1), 70px 140px 0 0 rgba(58,74,166,1), 80px 140px 0 0 rgba(58,74,166,1), 90px 140px 0 0 rgba(58,74,166,1), 100px 140px 0 0 rgba(100,70,59,1), 110px 140px 0 0 rgba(100,70,59,1), 120px 140px 0 0 rgba(58,74,166,1), 130px 140px 0 0 rgba(58,74,166,1), 140px 140px 0 0 rgba(33, 150, 243, 1), 60px 150px 0 0 rgba(33, 150, 243, 1), 70px 150px 0 0 rgba(58,74,166,1), 80px 150px 0 0 rgba(58,74,166,1), 90px 150px 0 0 rgba(63,81,181,1), 100px 150px 0 0 rgba(100,70,59,1), 110px 150px 0 0 rgba(100,70,59,1), 120px 150px 0 0 rgba(63,81,181,1), 130px 150px 0 0 rgba(33, 150, 243, 1), 60px 160px 0 0 rgba(33, 150, 243, 1), 70px 160px 0 0 rgba(58,74,166,1), 80px 160px 0 0 rgba(63,81,181,1), 90px 160px 0 0 rgba(63,81,181,1), 100px 160px 0 0 rgba(0, 0, 0, 1), 110px 160px 0 0 rgba(0, 0, 0, 1), 120px 160px 0 0 rgba(255, 255, 255, 1), 130px 160px 0 0 rgba(255,205,210,1), 140px 160px 0 0 rgba(0, 188, 212, 1), 40px 170px 0 0 rgba(121,85,72,1), 50px 170px 0 0 rgba(220,174,178,1), 60px 170px 0 0 rgba(33, 150, 243, 1), 70px 170px 0 0 rgba(58,74,166,1), 80px 170px 0 0 rgba(63,81,181,1), 90px 170px 0 0 rgba(245,240,240,1), 100px 170px 0 0 rgba(100,70,59,1), 110px 170px 0 0 rgba(121,85,72,1), 120px 170px 0 0 rgba(255, 255, 255, 1), 130px 170px 0 0 rgba(220,174,178,1), 140px 170px 0 0 rgba(0, 188, 212, 1), 150px 170px 0 0 rgba(0,167,189,1), 160px 170px 0 0 rgba(220,174,178,1), 170px 170px 0 0 rgba(121,85,72,1), 30px 180px 0 0 rgba(121,85,72,1), 40px 180px 0 0 rgba(121,85,72,1), 50px 180px 0 0 rgba(255,205,210,1), 60px 180px 0 0 rgba(33, 150, 243, 1), 70px 180px 0 0 rgba(58,74,166,1), 80px 180px 0 0 rgba(63,81,181,1), 90px 180px 0 0 rgba(245,240,240,1), 100px 180px 0 0 rgba(245,240,240,1), 110px 180px 0 0 rgba(255, 255, 255, 1), 120px 180px 0 0 rgba(255, 255, 255, 1), 130px 180px 0 0 rgba(255,205,210,1), 140px 180px 0 0 rgba(0, 188, 212, 1), 150px 180px 0 0 rgba(0,167,189,1), 160px 180px 0 0 rgba(255,205,210,1), 170px 180px 0 0 rgba(121,85,72,1), 180px 180px 0 0 rgba(121,85,72,1), 30px 190px 0 0 rgba(121,85,72,1), 40px 190px 0 0 rgba(121,85,72,1), 50px 190px 0 0 rgba(220,174,178,1), 60px 190px 0 0 rgba(33, 150, 243, 1), 70px 190px 0 0 rgba(58,74,166,1), 80px 190px 0 0 rgba(63,81,181,1), 90px 190px 0 0 rgba(220,174,178,1), 100px 190px 0 0 rgba(220,174,178,1), 110px 190px 0 0 rgba(220,174,178,1), 120px 190px 0 0 rgba(220,174,178,1), 130px 190px 0 0 rgba(220,174,178,1), 140px 190px 0 0 rgba(0, 188, 212, 1), 150px 190px 0 0 rgba(0,167,189,1), 160px 190px 0 0 rgba(220,174,178,1), 170px 190px 0 0 rgba(121,85,72,1), 180px 190px 0 0 rgba(121,85,72,1), 30px 200px 0 0 rgba(121,85,72,1), 40px 200px 0 0 rgba(121,85,72,1), 50px 200px 0 0 rgba(255,205,210,1), 60px 200px 0 0 rgba(33, 150, 243, 1), 70px 200px 0 0 rgba(58,74,166,1), 80px 200px 0 0 rgba(63,81,181,1), 90px 200px 0 0 rgba(0,167,189,1), 100px 200px 0 0 rgba(0, 188, 212, 1), 110px 200px 0 0 rgba(0, 188, 212, 1), 120px 200px 0 0 rgba(0, 188, 212, 1), 130px 200px 0 0 rgba(0, 188, 212, 1), 140px 200px 0 0 rgba(255, 193, 7, 1), 150px 200px 0 0 rgba(0,167,189,1), 160px 200px 0 0 rgba(255,205,210,1), 170px 200px 0 0 rgba(121,85,72,1), 180px 200px 0 0 rgba(121,85,72,1);
+            height: 10px;
+            width: 10px;
+        }
+        footer h4 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        footer a {
+            color: #004d61;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        
+       <div class="container"> 
+       <div class="pixelart-to-css"></div>
+       </div>
+       
+        <a href="Home.html" class="home-button">
+            <img src="https://i.pinimg.com/564x/96/b2/3e/96b23e27d3c03b243061a5607c5db0b1.jpg" alt="Home">
+        </a>
+    </nav>
+
+    <!-- Projects Header -->
+    <header>
+        <h1>Learn About Ciphers!</h1>
+    </header>
+    
+    <main>
+        <h2>Interactive Audio Experience</h2>
+        <p>Below is an audio track that enhances the eerie theme of cryptography and mystery! Play if you dare!</p>
+        
+        <section>
+            <h3>~Creepy Ambiance~</h3>
+            <video autoplay loop muted>
+                <source src="Cryptic.mp4" type="video/mp4">
+                <source src="Cryptic.webm" type="video/webm">
+                <source src="Cryptic.mov" type="video/mov">
+            </video>
+            <audio  controls loop>
+                <source src="Cave.mp3" type="audio/mpeg">
+                <source src="Cave.ogg" type="audio/ogg">
+                <source src="Cave.wav" type="audio/wav">
+            </audio>
+        </section>
+    </main>
+    
+    <!-- Caesar Cipher Section -->
+    <section class="cipher-explanation">
+        <h2>Caesar Cipher</h2>
+        <p>The Caesar Cipher is a substitution cipher where a certain number of positions shifts each letter in the plaintext. This is one of the simplest forms of encryption, used by Julius Caesar to protect his messages. The encryption formula is:</p>
+        <p class="equation">C = (P + k) % 26</p>
+        <p>Where:
+            <ul>
+                <li><span class="highlight">C</span> = Ciphertext (the encrypted letter)</li>
+                <li><span class="highlight">P</span> = Plaintext (the original letter’s position in the alphabet)</li>
+                <li><span class="highlight">k</span> = Shift value (how many positions to shift the letters)</li>
+                <li><span class="highlight">% 26</span> = Wraps the alphabet so letters after 'Z' return to 'A'</li>
+            </ul>
+        </p>
+
+        <p>Here’s an example with a shift of 3. The message is a quote from a famous movie:</p>
+        <div class="quote">"May the Force be with you."</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Original Letter</th>
+                    <th>Shifted by 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>M</td>
+                    <td>P</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td>Y</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td>I</td>
+                </tr>
+                <tr>
+                    <td>O</td>
+                    <td>R</td>
+                </tr>
+                <tr>
+                    <td>R</td>
+                    <td>U</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td>H</td>
+                </tr>
+                <tr>
+                    <td>W</td>
+                    <td>Z</td>
+                </tr>
+                <tr>
+                    <td>I</td>
+                    <td>L</td>
+                </tr>
+                <tr>
+                    <td>T</td>
+                    <td>W</td>
+                </tr>
+                <tr>
+                    <td>H</td>
+                    <td>K</td>
+                </tr>
+                <tr>
+                    <td>Y</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>O</td>
+                    <td>R</td>
+                </tr>
+                <tr>
+                    <td>U</td>
+                    <td>X</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>The encrypted message is: <strong>"Pdb wkh Irufh eh zlwk brx"</strong></p>
+    </section>
+
+    <!-- Transposition Cipher Section -->
+    <section class="cipher-explanation">
+        <h2>Transposition Cipher</h2>
+        <p>A Columnar Transposition Cipher works by writing the plaintext in rows of a fixed length and then reading the columns vertically in a scrambled order. This cipher does not alter the letters but rearranges their position. The formula used is:</p>
+        <p class="equation">Columns = Message Length ÷ Column Width</p>
+
+        <p>Here’s an example using the same message as before, "May the Force be with you," and writing it into columns of width 5:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                    <th>Column 4</th>
+                    <th>Column 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>M</td>
+                    <td>A</td>
+                    <td>Y</td>
+                    <td>T</td>
+                    <td>H</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td>F</td>
+                    <td>O</td>
+                    <td>R</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td>B</td>
+                    <td>E</td>
+                    <td>W</td>
+                    <td>I</td>
+                </tr>
+                <tr>
+                    <td>T</td>
+                    <td>H</td>
+                    <td>Y</td>
+                    <td>O</td>
+                    <td>U</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>To create the ciphertext, we read the columns in a specific order. For example, reading columns 3, 1, 4, 5, 2, we get:</p>
+        <p class="highlight">"YTEO MYHT FWRO OHC EBI"</p>
+    </section>
+
+   <footer>
+    <p>Mouse over and click the link: <a
+        href="https://www.w3schools.com">w3schools.com</a></p>
+    </footer>
+
+</body>
+</html>
