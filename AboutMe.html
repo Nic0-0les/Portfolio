@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Nicole Selo-Ojeme</title>
+    <style>
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e0f7fa, #80deea);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #004d61;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 10px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #80deea;
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #004d61, #007acc);
+            color: white;
+        }
+        header h1 {
+            font-size: 48px;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+        video {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border: 10px solid #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        audio {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 600px;
+        }
+
+		/* Skills List Styling */
+		.skills-list {
+   		    list-style-type: square;
+            padding-left: 20px;
+            margin-bottom: 30px;
+            color: #007acc;
+        }
+        .skills-list li {
+            font-size: 18px;
+            margin-bottom: 8px;
+            font-family: monospace;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .skills-list li:hover {
+            color: #EE598C;
+        }
+
+        /* Hobbies List Styling */
+        .hobbies-list {
+            list-style-type: decimal;
+            padding-left: 20px;
+            color: #EE598C;
+        }
+        .hobbies-list li {
+            font-size: 18px;
+            margin-bottom: 8px;
+            font-family: monospace;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .hobbies-list li:hover {
+            color: #007acc;
+        }
+
+        /* Section Styling */
+        section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            margin: 30px auto;
+            width: 80%;
+        }
+        section h2 {
+            font-size: 36px;
+            color: #004d61;
+        }
+        section p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Image Styling */
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #004d61;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+        footer h4 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        footer a {
+            color: #80deea;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* New ID-based styles */
+        #hobby-img {
+            width: 300px;
+            border: 2px solid #80deea;
+        }
+
+        #intro-text {
+            color: #000000;
+            
+        }
+
+        /* New element styling */
+        #fun-fact {
+            font-weight: bold;
+            color: #555;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        #quote {
+            font-size: 20px;
+            color: #004d61;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="AboutMe.html">About Me</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me Header -->
+    <header>
+        <h1>About Nicole Selo-Ojeme</h1>
+    </header>
+
+    <!-- About Section -->
+    <section>
+        <h2>Who I Am</h2>
+        <p id="intro-text">
+            Hello! I’m Nicole Selo-Ojeme, an enthusiastic learner and explorer with a passion for technology and design. I’m currently majoring in cybersecurity at 
+            <a href="https://www.odu.edu/academics/programs/undergraduate/cybersecurity" target="_blank" style="color: #007acc;">Old Dominion University</a>, where I’m learning about the latest trends in information security. In the spring, I plan to study abroad at 
+            <a href="https://en.apu.ac.jp/home/" target="_blank" style="color: #007acc;">Ritsumeikan Asia Pacific University</a> to further my knowledge in Asia Pacific Management and Studies.
+        </p>
+        <img src="https://blog.internxt.com/content/images/2022/02/Security-meme.png" alt="Cybersecurity Image" width="500" height="300">
+    </section>
+
+    <!-- Interests & Hobbies Section -->
+    <section>
+        <h2>Interests & Hobbies</h2>
+        <p>
+            I love exploring new cities, especially ones rich in technology and innovation. Tokyo, Japan, holds a special place in my heart for its unique blend of tradition and futuristic advancements.
+        </p>
+        <img id="hobby-img" src="https://images.prismic.io/bellerose/1d41685c-5525-4c27-9810-43e17711480c__DSF0425.jpg?auto=compress,format&rect=0,0,1200,1286&w=1200&h=1286" alt="Favorite City, Tokyo Japan" width="400" height="300">
+        
+        <!-- New Fun Fact Element -->
+        <p id="fun-fact">Fun Fact: I hope to one day live and work in Japan in a cybersecurity or business role!</p>
+        <video autoplay loop muted>
+                <source src="Japann.mp4" type="video/mp4">
+                <source src="Japann.webm" type="video/webm">
+                <source src="Japann.mov" type="video/mov">
+            </video>
+        <audio controls loop>
+                <source src="Japan.mp3" type="audio/mpeg">
+                <source src="Japan.ogg" type="audio/ogg">
+                <source src="Japan.wav" type="audio/wav">
+            </audio>
+    </section>
+    
+    <section>
+    <h2>My Skills</h2>
+    <ul class="skills-list">
+        <li>K-12 Math </li>
+        <li>Cryptography & Encryption</li>
+        <li>Web Development (HTML, CSS, JavaScript)</li>
+        <li>Problem Solving & Critical Thinking</li>
+        <li>Japanese Language Proficiency (Intermediate)</li>
+    </ul>
+
+    <h2>My Hobbies</h2>
+    <ol class="hobbies-list">
+        <li>Singing & Dancing</li>
+        <li>Playing Video Games</li>
+        <li>Traveling (especially to Japan)</li>
+        <li>Crochet, Sewing, & Art (in any medium)</li>
+        <li>Reading Mystery, Horror/Thriller, Sci-Fi, YA, Romance, & Fantasy Novels</li>
+    </ol>
+    </section>
+
+    <!-- New Quote Element -->
+    <section id="quote">
+        "Success is not final, failure is not fatal: It is the courage to continue that counts."
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h4>Let’s Connect</h4>
+        <p>If you want to get in touch or learn more about my work, feel free to reach out!</p>
+        <p>Email: <a href="mailto:nselo001@odu.edu">nselo001@odu.edu</a></p>
+        <p>Learn more about life at ODU through their <a href="https://www.odu.edu/life" target="_blank">Student Life page</a>.</p>
+    </footer>
+
+</body>
+</html>
