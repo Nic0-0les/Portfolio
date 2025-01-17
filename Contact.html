@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Nicole Selo-Ojeme</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            color: #fff;
+            background: #081b29;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            animation: slideIn 2s ease-out;
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        header h1 {
+            font-size: 36px;
+            margin-top: 10px;
+        }
+        section {
+    		padding: 40px;
+    		text-align: center;
+    		background-color: #fff;
+    		color: #333;
+    		margin: 20px 0;
+    		width: 50%;
+    		border-radius: 10px;
+    		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    		transition: box-shadow 0.3s, padding 0.3s;
+    		line-height: 1.8;
+		}
+        section h2 {
+    		margin-bottom: 20px;
+		}
+
+		section p {
+    		margin-bottom: 15px; /* Adds space between paragraphs */
+		}
+        section:hover {
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0), /* Invisible base shadow */
+                		0 0 25px 10px rgba(255, 0, 0, 0.6), /* Red */
+                		0 0 35px 15px rgba(255, 165, 0, 0.6), /* Orange */
+                		0 0 45px 20px rgba(255, 255, 0, 0.6), /* Yellow */
+                		0 0 55px 25px rgba(0, 255, 0, 0.6), /* Green */
+                		0 0 65px 30px rgba(0, 0, 255, 0.6), /* Blue */
+                		0 0 75px 35px rgba(75, 0, 130, 0.6), /* Indigo */
+                		0 0 85px 40px rgba(238, 130, 238, 0.6); /* Violet */
+        }
+        .email:hover {
+       		font-weight: bold;
+    		color: blue; /* Bright color for contrast */
+    		text-decoration: underline;
+		}
+        figure {
+            margin: 20px auto;
+            text-align: center;
+        }
+        figure img {
+            width: 300px;
+            border-radius: 10px;
+        }
+        figure:hover {
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0), /* Invisible base shadow */
+                		0 0 25px 10px rgba(255, 0, 0, 0.6), /* Red */
+                		0 0 35px 15px rgba(255, 165, 0, 0.6), /* Orange */
+                		0 0 45px 20px rgba(255, 255, 0, 0.6), /* Yellow */
+                		0 0 55px 25px rgba(0, 255, 0, 0.6), /* Green */
+                		0 0 65px 30px rgba(0, 0, 255, 0.6), /* Blue */
+                		0 0 75px 35px rgba(75, 0, 130, 0.6), /* Indigo */
+                		0 0 85px 40px rgba(238, 130, 238, 0.6); /* Violet */
+        }
+        blockquote {
+            font-size: 18px;
+            font-style: italic;
+            margin: 20px auto;
+            width: 50%;
+            color: yellow;
+        }
+        blockquote footer {
+            text-align: right;
+            font-size: 16px;
+            color: #999;
+        }
+        cite {
+        	color: #fff;
+        }
+        .wrapper {
+            width: 800px;
+            padding: 20px;
+            border: 3px solid #00ffff;
+            box-shadow: 0 0 50px 0 #00a6bc;
+            border-radius: 20px;
+            background-color: #001f33;
+            margin: 20px 0;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .title {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+        .inp {
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 30px;
+            position: relative;
+            width: 100%;
+        }
+        .input {
+            border: none;
+            outline: none;
+            background: none;
+            width: 100%;
+            margin-top: 10px;
+            font-size: 17px;
+            color: #0ef;
+            padding: 10px 10px;
+        }
+        .submit {
+            border: none;
+            outline: none;
+            width: 100%;
+            margin-top: 25px;
+            padding: 10px 0;
+            font-size: 20px;
+            border-radius: 40px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            background: linear-gradient(45deg, #0ef, #c800ff);
+            transition: background-color 0.3s ease;
+        }
+        .submit:hover {
+            background: linear-gradient(45deg, #0ef, #ff0080);
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .linkedin-btn {
+    		padding: 10px 20px;
+    		background-color: #0077b5;
+    		color: white;
+    		border: none;
+    		border-radius: 5px;
+    		font-size: 18px;
+    		cursor: pointer;
+    		transition: background 0.3s ease, transform 0.2s ease; /* Adds transition for hover */
+		}
+        .linkedin-btn:hover {
+    		background: linear-gradient(45deg, #0ef, #ff0080); /* Gradient on hover */
+    		transform: scale(1.05); /* Slightly enlarges the button */
+		}
+		mark {
+    		background-color: #ffcc00;
+    		color: #333;
+    		padding: 2px 5px;
+		}
+    </style>
+</head>
+<body>
+    <header>
+       <nav>
+         <ul>
+           <li><a href="Home.html">Home</a></li>
+           <li><a href="AboutMe.html">About Me</a></li>
+           <li><a href="Projects.html">Projects</a></li>
+           <li><a href="Contact.html">Contact</a></li>
+         </ul>
+       </nav>
+       <h1>Contact Nicole Selo-Ojeme</h1>
+    </header>
+
+    <section>
+        <h2>Get in Touch</h2>
+        <p>If you'd like to contact me regarding cybersecurity-related inquiries,</p> 
+        <p>please reach out through my email: <span class="email">nselo001@odu.edu</span></p>
+        <p>Feel free to connect with me through <button class="linkedin-btn" onclick="window.location.href='https://www.linkedin.com/in/nicole-selo-ojeme-922223157/'"> my LinkedIn</button> for professional opportunities.</p>
+    </section>
+
+    <figure>
+        <img src="Images/IMG_6450.PNG" alt="Profile picture of Nicole Selo-Ojeme">
+        <figcaption>A picture of me, Nicole Selo-Ojeme.</figcaption>
+    </figure>
+
+    <blockquote>
+        "Success is not the key to happiness. Happiness is the key to success."
+        <cite>– Albert Schweitzer</cite>
+    </blockquote>
+    
+    <div class="wrapper">
+        <div class="form">
+            <h1 class="title">Contact Nicole Selo-Ojeme</h1>
+            <div class="inp">
+                <input type="text" id="name" class="input" placeholder="Enter your name" required>
+            </div>
+            <div class="inp">
+                <input type="email" id="email" class="input" placeholder="Enter your email" required>
+            </div>
+            <div class="inp">
+                <textarea id="message" class="input" rows="5" placeholder="Your message" required></textarea>
+            </div>
+            <button class="submit">Submit</button>
+        </div>
+    </div>
+    
+    <footer>
+        <h4>Stay Connected:</h4>
+        <p>Learn more about my work by visiting my <a href="Home.html">homepage</a>.</p>
+    </footer>
+</body>
+</html>
