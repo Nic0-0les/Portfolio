@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Nicole Selo-Ojeme</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #005f73;
+            color: white;
+        }
+        h1 {
+            font-size: 36px;
+            color: #fff;
+        }
+
+        /* Navigation bar styling */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #001f3f;
+            padding: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #007acc;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        /* Section and details styling */
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+        }
+        h2 {
+            color: #333;
+        }
+        details {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        summary {
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+            color: #005f73;
+        }
+        summary:hover {
+            color: #007acc;
+        }
+        p, a {
+            font-size: 16px;
+            color: #555;
+        }
+        a {
+            text-decoration: none;
+            color: #007acc;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Button styling */
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: #ff6b6b;
+            border: none;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .button:hover {
+            background-color: #ff4747;
+            transform: scale(1.05);
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+            color: #777;
+            background-color: #001f3f;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="AboutMe.html">About Me</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Projects Header -->
+    <header>
+        <h1>Nicole Selo-Ojeme's Projects</h1>
+    </header>
+
+    <!-- Tootsie Pop Experiment -->
+    <section>
+        <h2>Fun & Silly: The Tootsie Pop Experiment</h2>
+        <p>Did you know? It took me about 180 licks to reach the center of a Tootsie Pop when I was in 3rd grade. I recently revisited this classic experiment, and the results were a bit surprising!</p>
+        <details>
+            <summary>Click to learn more about the experiment</summary>
+            <p>
+                In my original experiment, I counted each lick meticulously. During my recent attempt, I used a newer batch of Tootsie Pops, and it turns out I needed fewer licks to reach the center. Was it due to a manufacturing change or my improved technique? The world may never know! <br>
+                For more about the scientific method used, check out this <a href="https://biodiversityproject.arizona.edu/sites/default/files/2022-03/The%20Scientific%20Method%20-%20A%20Tootsie%20Pop%20Experiment.pdf" target="_blank">Tootsie Pop experiment</a>.
+            </p>
+        </details>
+    </section>
+
+    <!-- HTML Portfolio Project -->
+    <section>
+        <h2>Building My HTML Portfolio</h2>
+        <p>This website is the result of my first steps in web development. I've built it from scratch using HTML and CSS, applying design principles to ensure clarity and professionalism.</p>
+        <details>
+            <summary>Click to see more details about this project</summary>
+            <p>
+                In this project, I learned the fundamentals of web development, including how to structure content with HTML and style it with CSS. The goal was to create a personal portfolio that effectively showcases my skills and achievements in cybersecurity, cryptography, and coding.<br>
+                This project also involved deploying virtual machines to simulate real-world hacking and encryption scenarios, using tools like John the Ripper for password cracking and other encryption techniques. 
+            </p>
+        </details>
+    </section>
+
+    <!-- Cryptography Class Project -->
+    <section>
+        <h2>Cryptography Classwork</h2>
+        <p>One of my favorite subjects is cryptography. I've worked on various encryption methods and number theory concepts, including RSA and AES.</p>
+        <details>
+            <summary>Click to explore my cryptography projects</summary>
+            <p>
+                In my cryptography class, I worked on solving complex problems using RSA, Euclidean algorithms, and more. This course helped me gain a deeper understanding of how encryption protects data and the importance of secure communication.<br>
+                <a href="https://www.youtube.com/your-video-link" target="_blank"  class="button">Watch my video explaining RSA, AES, and Euclid’s function.</a>
+                <!-- Button linking to Ciphers page -->
+                <a href="Ciphers.html" class="button">Ciphers</a>
+            </p>
+        </details>
+    </section>
+
+    <!-- Coding Projects (Java & Python) -->
+    <section>
+        <h2>Coding History: Java & Python Projects</h2>
+        <p>I've developed a strong foundation in programming through various projects using Java and Python. These languages are crucial for both cybersecurity and general software development.</p>
+        <details>
+            <summary>Click to see some of my coding work</summary>
+            <p>
+                From creating small Java applications to automating tasks with Python, I have experience in building efficient code for various purposes. One project involved developing a simple encryption algorithm in Python, which further deepened my understanding of how programming and cryptography intersect.
+            </p>
+        </details>
+    </section>
+
+    <!-- SQL Database Project -->
+    <section>
+        <h2>SQL Database Tables</h2>
+        <p>Working with relational databases has given me insight into the structured storage of data. I've been creating tables and learning to manipulate data with SQL.</p>
+        <details>
+            <summary>Click to view my SQL projects</summary>
+            <p>
+                In this project, I created and managed multiple SQL database tables, ensuring proper relationships between data. I learned to perform complex queries, joins, and data manipulations to extract meaningful insights from raw datasets. These skills are directly applicable to cybersecurity, where data management plays a crucial role in security auditing and analysis.
+            </p>
+        </details>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h4>Let’s Connect</h4>
+        <p>If you want to get in touch or learn more about my work, feel free to reach out!</p>
+        <p>Email: <a href="mailto:nselo001@odu.edu">nselo001@odu.edu</a></p>
+    </footer>
+
+</body>
+</html>
